@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  
+  <configSections>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 --></configSections>
+  <connectionStrings>
+    <add name="Digital_AppEntities" connectionString="metadata=res://*/DataModel.ShopModel.csdl|res://*/DataModel.ShopModel.ssdl|res://*/DataModel.ShopModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=Digital_App;user id=sa;password=123;multipleactiveresultsets=True;application name=EntityFramework&quot;"
+      providerName="System.Data.EntityClient" />
+    <add name="View.Properties.Settings.Digital_AppConnectionString"
+      connectionString="Data Source=.;Initial Catalog=Digital_App;User ID=sa;Password=123;MultipleActiveResultSets=True;Application Name=EntityFramework"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>
+  </entityFramework>
+</configuration>

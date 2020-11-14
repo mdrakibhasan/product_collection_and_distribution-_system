@@ -1,0 +1,143 @@
+H:\Hygenic_app\View\bin\Debug\View.exe.config
+H:\Hygenic_app\View\bin\Debug\View.exe
+H:\Hygenic_app\View\bin\Debug\View.pdb
+H:\Hygenic_app\View\bin\Debug\EntityFramework.dll
+H:\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.dll
+H:\Hygenic_app\View\bin\Debug\EntityFramework.xml
+H:\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.xml
+H:\Hygenic_app\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+H:\Hygenic_app\View\obj\Debug\View.Properties.Resources.resources
+H:\Hygenic_app\View\obj\Debug\View.csproj.GenerateResource.Cache
+H:\Hygenic_app\View\obj\Debug\View.exe
+H:\Hygenic_app\View\obj\Debug\View.pdb
+H:\Hygenic_app\View\obj\Debug\View.Form1.resources
+H:\Project\Hygenic_app\View\bin\Debug\View.exe.config
+H:\Project\Hygenic_app\View\obj\Debug\View.exe
+H:\Project\Hygenic_app\View\obj\Debug\View.pdb
+H:\Project\Hygenic_app\View\bin\Debug\View.exe
+H:\Project\Hygenic_app\View\bin\Debug\View.pdb
+H:\Project\Hygenic_app\View\bin\Debug\EntityFramework.dll
+H:\Project\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.dll
+H:\Project\Hygenic_app\View\bin\Debug\EntityFramework.xml
+H:\Project\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.xml
+H:\Project\Hygenic_app\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+H:\Project\Hygenic_app\View\obj\Debug\View.frmItemInfo.resources
+H:\Project\Hygenic_app\View\obj\Debug\View.Properties.Resources.resources
+H:\Project\Hygenic_app\View\obj\Debug\View.csproj.GenerateResource.Cache
+H:\Project\Hygenic_app\View\obj\Debug\View.UI.frmUOM.resources
+H:\Project\Hygenic_app\View\obj\Debug\View.UI.Master.resources
+H:\Project\Hygenic_app\View\obj\Debug\View.UI.frmCategory.resources
+H:\Project\Hygenic_app\View\obj\Debug\View.UI.frmSubCategry.resources
+H:\Project\Hygenic_app\View\obj\Debug\View.UI.UserManager.frmUserGroup.resources
+H:\Project\Hygenic_app\View\obj\Debug\View.UI.frmUserInfo.resources
+H:\Project\Hygenic_app\View\obj\Debug\View.UI.frmFarmerInformation.resources
+F:\BUBT Project\Running\Hygenic_app\View\bin\Debug\View.exe.config
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.exe
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.pdb
+F:\BUBT Project\Running\Hygenic_app\View\bin\Debug\View.exe
+F:\BUBT Project\Running\Hygenic_app\View\bin\Debug\View.pdb
+F:\BUBT Project\Running\Hygenic_app\View\bin\Debug\EntityFramework.dll
+F:\BUBT Project\Running\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.dll
+F:\BUBT Project\Running\Hygenic_app\View\bin\Debug\EntityFramework.xml
+F:\BUBT Project\Running\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.xml
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmCategory.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmFarmerInformation.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.frmItemInfo.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.Properties.Resources.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmSubCategry.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmUOM.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.UserManager.frmUserGroup.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmUserInfo.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.Master.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.csproj.GenerateResource.Cache
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmItemPurchase.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmItemList.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\View.exe.config
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.exe
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.pdb
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\View.exe
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\View.pdb
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\EntityFramework.dll
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.dll
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\EntityFramework.xml
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.xml
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmCategory.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmFarmerInformation.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.frmItemInfo.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.Properties.Resources.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmItemList.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmItemPurchase.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmSubCategry.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmUOM.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.UserManager.frmUserGroup.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmUserInfo.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.Master.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.csproj.GenerateResource.Cache
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmProductRequest.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmPurhaseAprovedInfo.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmProductReceived.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmPurchaseAuthontication.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmitemStock.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmitemStock.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmProductReceived.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmProductRequest.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmPurchaseAuthontication.resources
+F:\BUBT Project\Running\Hygenic_app\View\obj\Debug\View.UI.frmPurhaseAprovedInfo.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmSalesDistribution.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.Reports.frmReportViewer.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.Company.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\RdlCompile.cache
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\RdlCompile.compiled
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.AgentMaster.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.Login.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.UI.frmCustomer.resources
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\Newtonsoft.Json.dll
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\View.exe.manifest
+H:\Project\Hygenic_app\Running\Hygenic_app\View\bin\Debug\View.application
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.exe.manifest
+H:\Project\Hygenic_app\Running\Hygenic_app\View\obj\Debug\View.application
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\View.exe.config
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.exe
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.pdb
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\View.exe.manifest
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\View.application
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\View.exe
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\View.pdb
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\EntityFramework.dll
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.dll
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\Newtonsoft.Json.dll
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\EntityFramework.xml
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\bin\Debug\EntityFramework.SqlServer.xml
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.Reports.frmReportViewer.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.AgentMaster.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.Company.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmCategory.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmCustomer.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmFarmerInformation.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.frmItemInfo.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.Properties.Resources.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmItemList.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmItemPurchase.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmitemStock.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmProductReceived.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmProductRequest.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmPurchaseAuthontication.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmPurhaseAprovedInfo.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmSalesDistribution.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmSubCategry.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmUOM.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.Login.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.UserManager.frmUserGroup.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.frmUserInfo.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.UI.Master.resources
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.csproj.GenerateResource.Cache
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\RdlCompile.cache
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\RdlCompile.compiled
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.exe.manifest
+H:\Project\Hygenic_app\Running\Hygenic_app(08-11-2020)\Hygenic_app\View\obj\Debug\View.application
+H:\Project\Hygenic_app\Product Collection and Distribution System\Project\Hygenic_app\View\bin\Debug\View.exe.config
+H:\Project\Hygenic_app\Product Collection and Distribution System\Project\Hygenic_app\View\obj\Debug\View.exe
+H:\Project\Hygenic_app\Product Collection and Distribution System\Project\Hygenic_app\View\obj\Debug\View.pdb

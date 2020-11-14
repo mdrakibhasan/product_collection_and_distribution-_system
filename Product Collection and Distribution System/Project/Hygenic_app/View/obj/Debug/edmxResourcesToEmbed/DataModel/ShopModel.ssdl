@@ -1,0 +1,1580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Digital_AppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bank_branch">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="BranchName" MaxLength="100" Type="varchar" />
+    <Property Name="BranchAddress" MaxLength="100" Type="varchar" />
+    <Property Name="Phone1" MaxLength="20" Type="varchar" />
+    <Property Name="Fax" MaxLength="20" Type="varchar" />
+    <Property Name="web" MaxLength="20" Type="varchar" />
+    <Property Name="BankStatus" MaxLength="1" Type="char" />
+    <Property Name="Bank_Id" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="AccountNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="addr1" MaxLength="350" Type="nvarchar" />
+    <Property Name="addr2" MaxLength="350" Type="nvarchar" />
+    <Property Name="ADDR3" MaxLength="350" Type="nvarchar" />
+    <Property Name="PHONE2" MaxLength="20" Type="varchar" />
+    <Property Name="Gl_Code" MaxLength="50" Type="nvarchar" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="AccountName" MaxLength="250" Type="nvarchar" />
+    <Property Name="AccountType" MaxLength="250" Type="nvarchar" />
+    <Property Name="ServerID" Type="int" />
+    <Property Name="LocalUploadFlag" Type="int" />
+    <Property Name="BankType" MaxLength="10" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="bank_info">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="BankName" MaxLength="100" Type="varchar" />
+    <Property Name="Description" MaxLength="250" Type="varchar" />
+    <Property Name="Active" Nullable="false" Type="bit" />
+    <Property Name="ServerID" Type="int" />
+    <Property Name="BankType" MaxLength="5" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="CardName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="150" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Code" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="Name" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="Description" MaxLength="250" Type="varchar" />
+    <Property Name="Active" Nullable="false" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="int" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CompanyInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="smallint" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Name" MaxLength="200" Type="nvarchar" />
+    <Property Name="Mobile" MaxLength="50" Type="nvarchar" />
+    <Property Name="Phone" MaxLength="50" Type="nvarchar" />
+    <Property Name="Fax" MaxLength="50" Type="nvarchar" />
+    <Property Name="Email" MaxLength="150" Type="nvarchar" />
+    <Property Name="Website" MaxLength="150" Type="nvarchar" />
+    <Property Name="VATRegistration" MaxLength="50" Type="nvarchar" />
+    <Property Name="Logo" Type="image" />
+    <Property Name="Address1" Type="nvarchar(max)" />
+    <Property Name="Address2" Type="nvarchar(max)" />
+    <Property Name="City" MaxLength="100" Type="nvarchar" />
+    <Property Name="State" MaxLength="100" Type="nvarchar" />
+    <Property Name="PostalCode" MaxLength="30" Type="nvarchar" />
+    <Property Name="Country" MaxLength="100" Type="nvarchar" />
+    <Property Name="VatGroupNo" MaxLength="10" Type="nvarchar" />
+    <Property Name="ShortLogo" Type="image" />
+  </EntityType>
+  <EntityType Name="COUNTRY_INFO">
+    <Key>
+      <PropertyRef Name="COUNTRY_CODE" />
+    </Key>
+    <Property Name="COUNTRY_CODE" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="COUNTRY_ABVR" MaxLength="10" Type="varchar" />
+    <Property Name="COUNTRY_DESC" MaxLength="50" Type="varchar" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Code" MaxLength="20" Type="nvarchar" />
+    <Property Name="ContactTitle" MaxLength="250" Type="nvarchar" />
+    <Property Name="ContactName" MaxLength="250" Type="nvarchar" />
+    <Property Name="Email" MaxLength="100" Type="nvarchar" />
+    <Property Name="Mobile" MaxLength="50" Type="nvarchar" />
+    <Property Name="Phone" MaxLength="50" Type="nvarchar" />
+    <Property Name="Fax" MaxLength="50" Type="nvarchar" />
+    <Property Name="Address1" Type="nvarchar(max)" />
+    <Property Name="Address2" Type="nvarchar(max)" />
+    <Property Name="City" MaxLength="50" Type="nvarchar" />
+    <Property Name="State" MaxLength="50" Type="nvarchar" />
+    <Property Name="PostalCode" MaxLength="10" Type="nvarchar" />
+    <Property Name="Country" MaxLength="100" Type="nvarchar" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ServerID" Type="int" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="Maragedate" Type="date" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Code" Nullable="false" MaxLength="10" Type="nvarchar" />
+    <Property Name="Name" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="Description" MaxLength="250" Type="varchar" />
+    <Property Name="Active" Nullable="false" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="250" Type="nvarchar" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="DISTRICTINFO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="DISTRICT_CODE" Nullable="false" MaxLength="2" Type="varchar" />
+    <Property Name="DISTRICT_NAME" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="DIVISION_CODE" MaxLength="2" Type="varchar" />
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.DIVISION_CODE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DIVISION_CODE">
+    <Key>
+      <PropertyRef Name="DIVISION_CODE" />
+      <PropertyRef Name="DIVISION_NAME" />
+    </Key>
+    <Property Name="DIVISION_CODE" Nullable="false" MaxLength="2" Type="varchar" />
+    <Property Name="DIVISION_NAME" Nullable="false" MaxLength="50" Type="varchar" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Code" MaxLength="250" Type="nvarchar" />
+    <Property Name="Name" MaxLength="550" Type="nvarchar" />
+    <Property Name="NationalID" MaxLength="150" Type="nvarchar" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="Sex" MaxLength="10" Type="nvarchar" />
+    <Property Name="Religion" Type="int" />
+    <Property Name="MaritalStatus" MaxLength="50" Type="nvarchar" />
+    <Property Name="FatherName" MaxLength="550" Type="nvarchar" />
+    <Property Name="MotherName" MaxLength="550" Type="nvarchar" />
+    <Property Name="DateOfJoin" Type="date" />
+    <Property Name="ConfirmDate" Type="date" />
+    <Property Name="DesignationID" Type="int" />
+    <Property Name="BasicSalary" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="JobStatus" MaxLength="20" Type="nvarchar" />
+    <Property Name="Mobile" MaxLength="50" Type="nvarchar" />
+    <Property Name="BloodGroup" MaxLength="10" Type="nvarchar" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Image" Type="image" />
+  </EntityType>
+  <EntityType Name="FarmerInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="FarmerName" MaxLength="250" Type="nvarchar" />
+    <Property Name="MobileNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="Email" MaxLength="50" Type="nvarchar" />
+    <Property Name="Address" MaxLength="350" Type="nvarchar" />
+    <Property Name="DistricID" Type="int" />
+    <Property Name="ThanaID" Type="int" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="PostalCode" MaxLength="10" Type="nvarchar" />
+    <Property Name="FatherName" MaxLength="150" Type="nvarchar" />
+    <Property Name="MotherName" MaxLength="150" Type="nvarchar" />
+    <Property Name="Code" MaxLength="50" Type="nvarchar" />
+    <Property Name="CountryID" Type="int" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="ItemInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="250" Type="nvarchar" />
+    <Property Name="CostPrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="SalePrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="DepartmentID" Type="int" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="SubcategoryID" Type="int" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="UOMID" Nullable="false" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Code" MaxLength="50" Type="nvarchar" />
+    <Property Name="ClosingStock" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ClosingAmount" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="StyleNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="Design" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="ItemPurchaseDtl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="bigint" />
+    <Property Name="ItemPurchaseMstID" Type="int" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="BatchNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="ExpireDate" Type="date" />
+    <Property Name="UnitPrice" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="Quantity" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="Total" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ReturnQuantity" Precision="18" Scale="0" Type="decimal" />
+  </EntityType>
+  <EntityType Name="ItemPurchaseMst">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="GRN" MaxLength="100" Type="nvarchar" />
+    <Property Name="ReceivedDate" Type="datetime" />
+    <Property Name="PO" MaxLength="100" Type="nvarchar" />
+    <Property Name="PODate" Type="datetime" />
+    <Property Name="ChallanNo" MaxLength="100" Type="nvarchar" />
+    <Property Name="ChallanDate" Type="datetime" />
+    <Property Name="SupplierID" Type="int" />
+    <Property Name="Remarks" Type="nvarchar(max)" />
+    <Property Name="Total" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="Currency" MaxLength="10" Type="char" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="discount" Type="money" />
+    <Property Name="carriage_charge" Type="money" />
+    <Property Name="labure_charge" Type="money" />
+    <Property Name="MST_Excel" Type="int" />
+    <Property Name="SupplierMobileNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="Satatus" MaxLength="5" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="bigint" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="InvoiceNo" MaxLength="100" Type="varchar" />
+    <Property Name="SubTotal" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TaxAmount" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="DiscountAmount" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="GrandTotal" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="CashReceived" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="CashRefund" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="PaymentMethodID" Type="smallint" />
+    <Property Name="PaymentMethodNumber" MaxLength="50" Type="nvarchar" />
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="OrderStatusID" Type="smallint" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Due" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="BankID" Type="int" />
+    <Property Name="CheckORCardNo" MaxLength="150" Type="nvarchar" />
+    <Property Name="CheckDate" Type="date" />
+    <Property Name="NameOfIssuer" MaxLength="500" Type="nvarchar" />
+    <Property Name="NameOnTheCard" MaxLength="150" Type="nvarchar" />
+    <Property Name="TypeOfCard" Type="int" />
+    <Property Name="UploadFlag" Type="int" />
+    <Property Name="NewInvoiceID" Type="int" />
+    <Property Name="BranchServerID" Type="int" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="ServiceBy" Type="int" />
+    <Property Name="MobileNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="ApprovedBy" MaxLength="350" Type="nvarchar" />
+    <Property Name="TaxRate" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="OfferTypeID" Type="int" />
+    <Property Name="OfferID" Type="int" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="bigint" />
+    <Property Name="OrderID" Type="bigint" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="UnitPrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TaxRate" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="DiscountAmount" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="SalePrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="Quantity" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TotalPrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ReturnQuantity" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="UploadFlag" Type="int" />
+    <Property Name="PvUnitPrice" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="ChangeQty" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ItemCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PaymentMethod">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="50" Type="varchar" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="ServerID" Type="int" />
+  </EntityType>
+  <EntityType Name="ProductReceivedDtls">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="ProductName" MaxLength="250" Type="nvarchar" />
+    <Property Name="MstID" Type="int" />
+    <Property Name="PurchasePrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="Quantity" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="UOMID" Type="int" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="Total" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="SalePrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ProductCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="ReceivedQuantity" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ExpireDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ProductReceivedMst">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="CollectorID" Type="int" />
+    <Property Name="CollectDate" Type="datetime" />
+    <Property Name="TotalAmount" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ReceivedAmount" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="DueAmount" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="CollectedCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="ReguestStatus" MaxLength="5" Type="nvarchar" />
+    <Property Name="CollectorName" MaxLength="250" Type="nvarchar" />
+    <Property Name="AgentCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="AgentID" Type="int" />
+    <Property Name="LaberCost" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ShippingCost" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="TotalQuantity" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="CollectedMstID" Type="int" />
+  </EntityType>
+  <EntityType Name="PurchaseHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="PurchaseID" Type="int" />
+    <Property Name="Remarks" MaxLength="350" Type="nvarchar" />
+    <Property Name="StatusType" MaxLength="5" Type="nvarchar" />
+    <Property Name="StatusDescription" MaxLength="250" Type="nvarchar" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="Updatedate" Type="datetime" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="Deletedate" Type="datetime" />
+    <Property Name="PurchaseCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="PoDate" Type="date" />
+    <Property Name="ChallanNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="SupplierID" Type="int" />
+    <Property Name="Total" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="FarmerID" Type="int" />
+    <Property Name="FarmerName" MaxLength="250" Type="nvarchar" />
+    <Property Name="FarmerMobile" MaxLength="20" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="SalaryPaymentDtls">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="int" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="BasicSalary" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="HouseRent" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="Deduction" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="TotalPayAmount" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="MstID" Type="int" />
+  </EntityType>
+  <EntityType Name="SalaryPaymentMst">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="SalaryMonth" MaxLength="20" Type="nvarchar" />
+    <Property Name="SalaryYear" MaxLength="4" Type="nvarchar" />
+    <Property Name="SalaryPayDate" Type="date" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteBy" Type="int" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="TotalAmount" Precision="18" Scale="2" Type="decimal" />
+  </EntityType>
+  <EntityType Name="SalesDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="MstID" Type="bigint" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="CostPrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TaxRate" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="DiscountAmount" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="SalePrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="Quantity" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TotalPrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ReturnQuantity" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="UploadFlag" Type="int" />
+    <Property Name="ChangeQty" Type="int" />
+  </EntityType>
+  <EntityType Name="SalesMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="bigint" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="InvoiceNo" MaxLength="100" Type="varchar" />
+    <Property Name="SubTotal" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TaxAmount" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="DiscountAmount" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="GrandTotal" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="CashReceived" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="CashRefund" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="OrderDate" Type="date" />
+    <Property Name="PaymentMethodID" Type="smallint" />
+    <Property Name="PaymentMethodNumber" MaxLength="50" Type="nvarchar" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="OrderStatusID" Type="smallint" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Due" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="BankID" Type="int" />
+    <Property Name="CheckORCardNo" MaxLength="150" Type="nvarchar" />
+    <Property Name="CheckDate" Type="date" />
+    <Property Name="NewInvoiceID" Type="int" />
+  </EntityType>
+  <EntityType Name="Stocks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="ItemId" Nullable="false" Type="int" />
+    <Property Name="InQuantity" Type="int" />
+    <Property Name="OutType" Type="int" />
+    <Property Name="OutQuantity" Type="int" />
+    <Property Name="ReceiveDate" Type="date" />
+    <Property Name="CreateBy" MaxLength="50" Type="nvarchar" />
+    <Property Name="CreateDate" Type="date" />
+    <Property Name="UpdateBy" MaxLength="50" Type="nvarchar" />
+    <Property Name="UpdateDate" Type="date" />
+    <Property Name="ItemCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="ClosingStock" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ClosingAmount" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="CostPrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="SalePrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="Code" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="SubCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Code" Nullable="false" MaxLength="10" Type="nvarchar" />
+    <Property Name="Name" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="Description" MaxLength="250" Type="varchar" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="Active" Nullable="false" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Code" MaxLength="10" Type="nvarchar" />
+    <Property Name="Name" MaxLength="250" Type="nvarchar" />
+    <Property Name="ContactTitle" MaxLength="250" Type="nvarchar" />
+    <Property Name="ContactName" MaxLength="250" Type="nvarchar" />
+    <Property Name="Designation" MaxLength="50" Type="nvarchar" />
+    <Property Name="Email" MaxLength="50" Type="nvarchar" />
+    <Property Name="Phone" MaxLength="50" Type="nvarchar" />
+    <Property Name="Fax" MaxLength="50" Type="nvarchar" />
+    <Property Name="Website" MaxLength="150" Type="nvarchar" />
+    <Property Name="Mobile" MaxLength="50" Type="nvarchar" />
+    <Property Name="Address1" Type="nvarchar(max)" />
+    <Property Name="Address2" Type="nvarchar(max)" />
+    <Property Name="City" MaxLength="100" Type="nvarchar" />
+    <Property Name="State" MaxLength="100" Type="nvarchar" />
+    <Property Name="PostalCode" MaxLength="10" Type="nvarchar" />
+    <Property Name="Country" MaxLength="100" Type="nvarchar" />
+    <Property Name="SupplierGroupID" Type="smallint" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SupplierGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TaxCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="smallint" />
+    <Property Name="Name" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="Rate" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="Active" Nullable="false" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Type" MaxLength="1" Type="nvarchar" />
+    <Property Name="ServerID" Type="int" />
+  </EntityType>
+  <EntityType Name="THANAINFO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="THANA_CODE" Nullable="false" MaxLength="4" Type="varchar" />
+    <Property Name="THANA_NAME" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="DISTRICT_ID" Type="int" />
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+  </EntityType>
+  <EntityType Name="UOM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="10" Type="nvarchar" />
+    <Property Name="Active" Nullable="false" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="smallint" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="UserName" MaxLength="50" Type="nvarchar" />
+    <Property Name="UserPassword" MaxLength="50" Type="nvarchar" />
+    <Property Name="FullName" MaxLength="50" Type="nvarchar" />
+    <Property Name="NationalID" MaxLength="20" Type="nvarchar" />
+    <Property Name="Email" MaxLength="50" Type="nvarchar" />
+    <Property Name="Mobile" MaxLength="50" Type="nvarchar" />
+    <Property Name="Phone" MaxLength="50" Type="nvarchar" />
+    <Property Name="Fax" MaxLength="50" Type="nvarchar" />
+    <Property Name="Address1" MaxLength="50" Type="nvarchar" />
+    <Property Name="Address2" MaxLength="50" Type="nvarchar" />
+    <Property Name="City" MaxLength="15" Type="nvarchar" />
+    <Property Name="State" MaxLength="15" Type="nvarchar" />
+    <Property Name="PostalCode" MaxLength="10" Type="nvarchar" />
+    <Property Name="Country" MaxLength="15" Type="nvarchar" />
+    <Property Name="UserGroupID" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Emp_No" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="UserGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="150" Type="varchar" />
+    <Property Name="Description" MaxLength="250" Type="varchar" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.UTL_MODULES' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UTL_MODULES">
+    <Key>
+      <PropertyRef Name="MOD_ID" />
+      <PropertyRef Name="DESCRIPTION" />
+    </Key>
+    <Property Name="MOD_ID" Nullable="false" MaxLength="3" Type="varchar" />
+    <Property Name="DESCRIPTION" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="MOD_NAME" MaxLength="50" Type="varchar" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.UTL_USERGRANT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UTL_USERGRANT">
+    <Key>
+      <PropertyRef Name="USER_NAME" />
+      <PropertyRef Name="MOD_ID" />
+    </Key>
+    <Property Name="USER_NAME" Nullable="false" MaxLength="30" Type="varchar" />
+    <Property Name="USER_GRP" MaxLength="2" Type="varchar" />
+    <Property Name="MOD_ID" Nullable="false" MaxLength="3" Type="varchar" />
+    <Property Name="ALLOW_ADD" MaxLength="1" Type="varchar" />
+    <Property Name="ALLOW_EDIT" MaxLength="1" Type="varchar" />
+    <Property Name="ALLOW_VIEW" MaxLength="1" Type="varchar" />
+    <Property Name="ALLOW_DELETE" MaxLength="1" Type="varchar" />
+    <Property Name="ALLOW_PRINT" MaxLength="1" Type="varchar" />
+    <Property Name="ALLOW_AUTHO" MaxLength="1" Type="varchar" />
+    <Property Name="DISPFLAG" MaxLength="1" Type="varchar" />
+  </EntityType>
+  <EntityType Name="UTL_USERINFO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="UserName" MaxLength="50" Type="nvarchar" />
+    <Property Name="UserPassword" MaxLength="50" Type="nvarchar" />
+    <Property Name="FullName" MaxLength="50" Type="nvarchar" />
+    <Property Name="NationalID" MaxLength="20" Type="nvarchar" />
+    <Property Name="Email" MaxLength="50" Type="nvarchar" />
+    <Property Name="Mobile" MaxLength="50" Type="nvarchar" />
+    <Property Name="Phone" MaxLength="50" Type="nvarchar" />
+    <Property Name="Fax" MaxLength="50" Type="nvarchar" />
+    <Property Name="Address1" MaxLength="50" Type="nvarchar" />
+    <Property Name="Address2" MaxLength="50" Type="nvarchar" />
+    <Property Name="City" MaxLength="15" Type="nvarchar" />
+    <Property Name="State" MaxLength="15" Type="nvarchar" />
+    <Property Name="PostalCode" MaxLength="10" Type="nvarchar" />
+    <Property Name="Country" MaxLength="15" Type="nvarchar" />
+    <Property Name="UserGroupID" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="EMP_NO" MaxLength="15" Type="varchar" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.CustomerInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CustomerInformation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Code" MaxLength="20" Type="nvarchar" />
+    <Property Name="ContactTitle" MaxLength="250" Type="nvarchar" />
+    <Property Name="ContactPerson" MaxLength="304" Type="nvarchar" />
+    <Property Name="FullName" MaxLength="501" Type="nvarchar" />
+    <Property Name="ContactName" MaxLength="522" Type="nvarchar" />
+    <Property Name="Email" MaxLength="100" Type="nvarchar" />
+    <Property Name="Mobile" MaxLength="50" Type="nvarchar" />
+    <Property Name="Phone" MaxLength="50" Type="nvarchar" />
+    <Property Name="Fax" MaxLength="50" Type="nvarchar" />
+    <Property Name="Address1" Type="nvarchar(max)" />
+    <Property Name="Address2" Type="nvarchar(max)" />
+    <Property Name="City" MaxLength="50" Type="nvarchar" />
+    <Property Name="State" MaxLength="50" Type="nvarchar" />
+    <Property Name="PostalCode" MaxLength="10" Type="nvarchar" />
+    <Property Name="Country" MaxLength="100" Type="nvarchar" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="smallint" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ServerID" Type="int" />
+    <Property Name="DateOfBirth" MaxLength="30" Type="nvarchar" />
+    <Property Name="Maragedate" MaxLength="30" Type="nvarchar" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.ItemWithUOM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ItemWithUOM">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="BranchName" />
+      <PropertyRef Name="UOMID" />
+      <PropertyRef Name="UOMName" />
+      <PropertyRef Name="DiscountAmount" />
+      <PropertyRef Name="Discount" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="int" />
+    <Property Name="Code" MaxLength="50" Type="nvarchar" />
+    <Property Name="Name" MaxLength="250" Type="nvarchar" />
+    <Property Name="BranchName" Nullable="false" MaxLength="5" Type="varchar" />
+    <Property Name="UOMID" Nullable="false" Type="int" />
+    <Property Name="UOMName" Nullable="false" MaxLength="10" Type="nvarchar" />
+    <Property Name="DiscountAmount" Nullable="false" Type="int" />
+    <Property Name="Discount" Nullable="false" Type="int" />
+    <Property Name="UnitsInStock" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="Category" MaxLength="50" Type="varchar" />
+    <Property Name="SubCategory" MaxLength="50" Type="varchar" />
+    <Property Name="StyleNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="Design" MaxLength="50" Type="nvarchar" />
+    <Property Name="CostPrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="SalePrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ItemCode" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.OrderInfoForMoneyReceipt' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="OrderInfoForMoneyReceipt">
+    <Key>
+      <PropertyRef Name="OrderDetailID" />
+      <PropertyRef Name="Design" />
+      <PropertyRef Name="Session" />
+      <PropertyRef Name="FabricPattan" />
+      <PropertyRef Name="TaxCategoryID" />
+      <PropertyRef Name="ChangeQty" />
+      <PropertyRef Name="ReturnQuantity" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="ItemType" />
+    </Key>
+    <Property Name="OrderDetailID" Nullable="false" Type="bigint" />
+    <Property Name="OrderID" Type="bigint" />
+    <Property Name="InvoiceNo" MaxLength="100" Type="varchar" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="SubTotal" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TaxAmount" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="Design" Nullable="false" MaxLength="1" Type="varchar" />
+    <Property Name="Session" Nullable="false" MaxLength="1" Type="varchar" />
+    <Property Name="FabricPattan" Nullable="false" MaxLength="1" Type="varchar" />
+    <Property Name="DiscountAmount" Precision="38" Scale="6" Type="decimal" />
+    <Property Name="GrandTotal" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TaxCategoryID" Nullable="false" MaxLength="1" Type="varchar" />
+    <Property Name="vatRate" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="CashReceived" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="CashRefund" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="ItemCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="ItemName" MaxLength="250" Type="nvarchar" />
+    <Property Name="ItemSize" MaxLength="50" Type="nvarchar" />
+    <Property Name="M_Code" MaxLength="50" Type="nvarchar" />
+    <Property Name="UOMName" MaxLength="10" Type="nvarchar" />
+    <Property Name="UnitPrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TaxRate" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="ChangeQty" Nullable="false" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ReturnQuantity" Nullable="false" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="ItemDiscountAmount" Precision="38" Scale="6" Type="decimal" />
+    <Property Name="SalePrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="Quantity" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="TotalPrice" Precision="18" Scale="4" Type="decimal" />
+    <Property Name="ContactName" MaxLength="501" Type="nvarchar" />
+    <Property Name="UserName" MaxLength="50" Type="nvarchar" />
+    <Property Name="ServiceBy" MaxLength="550" Type="nvarchar" />
+    <Property Name="FullName" MaxLength="50" Type="nvarchar" />
+    <Property Name="PaymentMode" MaxLength="50" Type="varchar" />
+    <Property Name="Type" Nullable="false" MaxLength="4" Type="varchar" />
+    <Property Name="ItemType" Nullable="false" MaxLength="1" Type="varchar" />
+    <Property Name="Category" MaxLength="50" Type="varchar" />
+    <Property Name="SubCategory" MaxLength="50" Type="varchar" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.View_GetItemPurchaseDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_GetItemPurchaseDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="bigint" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="PO" MaxLength="100" Type="nvarchar" />
+    <Property Name="PODate" Type="datetime" />
+    <Property Name="ChallanNo" MaxLength="100" Type="nvarchar" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="AggentName" MaxLength="50" Type="nvarchar" />
+    <Property Name="FarmerName" MaxLength="250" Type="nvarchar" />
+    <Property Name="MobileNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="ItemCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="BatchNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="SalePrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ExpireDate" Type="date" />
+    <Property Name="ItemName" MaxLength="250" Type="nvarchar" />
+    <Property Name="UnitPrice" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="Quantity" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="Total" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="ItemPurchaseMstID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.View_GetItemPurchaseMst' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_GetItemPurchaseMst">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="RowNum" Type="bigint" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="Keyword" MaxLength="4000" Type="nvarchar" />
+    <Property Name="TotalRows" Type="int" />
+    <Property Name="ID" Nullable="false" Type="int" />
+    <Property Name="GRN" MaxLength="100" Type="nvarchar" />
+    <Property Name="ReceivedDate" Type="datetime" />
+    <Property Name="PO" MaxLength="100" Type="nvarchar" />
+    <Property Name="PODate" Type="datetime" />
+    <Property Name="ChallanNo" MaxLength="100" Type="nvarchar" />
+    <Property Name="SupplierMobileNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="ChallanDate" Type="datetime" />
+    <Property Name="SupplierID" Type="int" />
+    <Property Name="Remarks" Type="nvarchar(max)" />
+    <Property Name="Total" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="Currency" MaxLength="10" Type="char" />
+    <Property Name="SupplierName" MaxLength="250" Type="nvarchar" />
+    <Property Name="discount" Type="money" />
+    <Property Name="labure_charge" Type="money" />
+    <Property Name="carriage_charge" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.View_ItemPurchaseHistoryorStatus' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_ItemPurchaseHistoryorStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FarmerName" />
+      <PropertyRef Name="Satt" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="int" />
+    <Property Name="PoCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="AddBy" Type="int" />
+    <Property Name="PODate" Type="date" />
+    <Property Name="ChallanNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="FarmerName" Nullable="false" MaxLength="250" Type="nvarchar" />
+    <Property Name="StatusType" MaxLength="5" Type="nvarchar" />
+    <Property Name="FarmerMobile" MaxLength="20" Type="nvarchar" />
+    <Property Name="Total" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="ItemQuantity" Precision="38" Scale="0" Type="decimal" />
+    <Property Name="Satt" Nullable="false" MaxLength="11" Type="varchar" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.View_ItemStatusDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_ItemStatusDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FarmerName" />
+      <PropertyRef Name="Satt" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="int" />
+    <Property Name="PoCode" MaxLength="100" Type="nvarchar" />
+    <Property Name="ItemName" MaxLength="250" Type="nvarchar" />
+    <Property Name="authoreBy" MaxLength="50" Type="nvarchar" />
+    <Property Name="Code" MaxLength="50" Type="nvarchar" />
+    <Property Name="Total" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="PurchasePrice" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="Quantity" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="PODate" Type="date" />
+    <Property Name="ChallanNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="FarmerName" Nullable="false" MaxLength="250" Type="nvarchar" />
+    <Property Name="StatusType" MaxLength="5" Type="nvarchar" />
+    <Property Name="FarmerMobile" MaxLength="20" Type="nvarchar" />
+    <Property Name="ItemQuantity" Precision="38" Scale="0" Type="decimal" />
+    <Property Name="Satt" Nullable="false" MaxLength="11" Type="varchar" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.View_ProductReceivedInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_ProductReceivedInformation">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FarmerName" />
+      <PropertyRef Name="Satatus" />
+      <PropertyRef Name="Satt" />
+      <PropertyRef Name="PurchseID" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="int" />
+    <Property Name="PoCode" MaxLength="100" Type="nvarchar" />
+    <Property Name="PODate" Type="date" />
+    <Property Name="ChallanNo" MaxLength="100" Type="nvarchar" />
+    <Property Name="FarmerName" Nullable="false" MaxLength="250" Type="nvarchar" />
+    <Property Name="Satatus" Nullable="false" MaxLength="5" Type="nvarchar" />
+    <Property Name="SupplierMobileNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="Total" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="ItemQuantity" Precision="38" Scale="0" Type="decimal" />
+    <Property Name="Satt" Nullable="false" MaxLength="12" Type="varchar" />
+    <Property Name="PurchseID" Nullable="false" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.View_PurchaseInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_PurchaseInformation">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FarmerName" />
+      <PropertyRef Name="Satt" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="int" />
+    <Property Name="PoCode" MaxLength="100" Type="nvarchar" />
+    <Property Name="CreatedBy" Type="smallint" />
+    <Property Name="PODate" Type="date" />
+    <Property Name="ChallanNo" MaxLength="100" Type="nvarchar" />
+    <Property Name="FarmerName" Nullable="false" MaxLength="250" Type="nvarchar" />
+    <Property Name="Satatus" MaxLength="5" Type="nvarchar" />
+    <Property Name="SupplierMobileNo" MaxLength="50" Type="nvarchar" />
+    <Property Name="Total" Precision="18" Scale="0" Type="decimal" />
+    <Property Name="ItemQuantity" Precision="38" Scale="0" Type="decimal" />
+    <Property Name="Satt" Nullable="false" MaxLength="11" Type="varchar" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Digital_App.dbo.View_ReceivedDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_ReceivedDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="ItemCode" MaxLength="50" Type="nvarchar" />
+    <Property Name="ExpireDate" Type="datetime" />
+    <Property Name="ItemName" MaxLength="250" Type="nvarchar" />
+    <Property Name="UnitPrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="SalePrice" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="Quantity" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="Total" Precision="18" Scale="2" Type="decimal" />
+    <Property Name="MstID" Type="int" />
+  </EntityType>
+  <Association Name="FK_FarmerInfo_COUNTRY_INFO">
+    <End Type="Self.COUNTRY_INFO" Multiplicity="0..1" Role="COUNTRY_INFO" />
+    <End Type="Self.FarmerInfo" Multiplicity="*" Role="FarmerInfo" />
+    <ReferentialConstraint>
+      <Principal Role="COUNTRY_INFO">
+        <PropertyRef Name="COUNTRY_CODE" />
+      </Principal>
+      <Dependent Role="FarmerInfo">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FarmerInfo_DISTRICTINFO">
+    <End Type="Self.DISTRICTINFO" Multiplicity="0..1" Role="DISTRICTINFO" />
+    <End Type="Self.FarmerInfo" Multiplicity="*" Role="FarmerInfo" />
+    <ReferentialConstraint>
+      <Principal Role="DISTRICTINFO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FarmerInfo">
+        <PropertyRef Name="DistricID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FarmerInfo_THANAINFO">
+    <End Type="Self.THANAINFO" Multiplicity="0..1" Role="THANAINFO" />
+    <End Type="Self.FarmerInfo" Multiplicity="*" Role="FarmerInfo" />
+    <ReferentialConstraint>
+      <Principal Role="THANAINFO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FarmerInfo">
+        <PropertyRef Name="ThanaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemInfo_Category">
+    <End Type="Self.Category" Multiplicity="0..1" Role="Category" />
+    <End Type="Self.ItemInfo" Multiplicity="*" Role="ItemInfo" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ItemInfo">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemInfo_Department">
+    <End Type="Self.Department" Multiplicity="0..1" Role="Department" />
+    <End Type="Self.ItemInfo" Multiplicity="*" Role="ItemInfo" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ItemInfo">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemInfo_SubCategory">
+    <End Type="Self.SubCategory" Multiplicity="0..1" Role="SubCategory" />
+    <End Type="Self.ItemInfo" Multiplicity="*" Role="ItemInfo" />
+    <ReferentialConstraint>
+      <Principal Role="SubCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ItemInfo">
+        <PropertyRef Name="SubcategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemInfo_UOM">
+    <End Type="Self.UOM" Multiplicity="1" Role="UOM" />
+    <End Type="Self.ItemInfo" Multiplicity="*" Role="ItemInfo" />
+    <ReferentialConstraint>
+      <Principal Role="UOM">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ItemInfo">
+        <PropertyRef Name="UOMID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemPurchaseDtl_ItemPurchaseMst">
+    <End Type="Self.ItemPurchaseMst" Multiplicity="0..1" Role="ItemPurchaseMst" />
+    <End Type="Self.ItemPurchaseDtl" Multiplicity="*" Role="ItemPurchaseDtl" />
+    <ReferentialConstraint>
+      <Principal Role="ItemPurchaseMst">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ItemPurchaseDtl">
+        <PropertyRef Name="ItemPurchaseMstID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemPurchaseMst_Farmer">
+    <End Type="Self.FarmerInfo" Multiplicity="0..1" Role="FarmerInfo" />
+    <End Type="Self.ItemPurchaseMst" Multiplicity="*" Role="ItemPurchaseMst" />
+    <ReferentialConstraint>
+      <Principal Role="FarmerInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ItemPurchaseMst">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_Order">
+    <End Type="Self.Order" Multiplicity="0..1" Role="Order" />
+    <End Type="Self.OrderDetail" Multiplicity="*" Role="OrderDetail" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_Stocks">
+    <End Type="Self.Stocks" Multiplicity="0..1" Role="Stocks" />
+    <End Type="Self.OrderDetail" Multiplicity="*" Role="OrderDetail" />
+    <ReferentialConstraint>
+      <Principal Role="Stocks">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductReceivedDtls_ProductReceivedMst">
+    <End Type="Self.ProductReceivedMst" Multiplicity="0..1" Role="ProductReceivedMst" />
+    <End Type="Self.ProductReceivedDtls" Multiplicity="*" Role="ProductReceivedDtls" />
+    <ReferentialConstraint>
+      <Principal Role="ProductReceivedMst">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductReceivedDtls">
+        <PropertyRef Name="MstID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalaryPaymentDtls_SalaryPaymentMst">
+    <End Type="Self.SalaryPaymentMst" Multiplicity="0..1" Role="SalaryPaymentMst" />
+    <End Type="Self.SalaryPaymentDtls" Multiplicity="*" Role="SalaryPaymentDtls" />
+    <ReferentialConstraint>
+      <Principal Role="SalaryPaymentMst">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SalaryPaymentDtls">
+        <PropertyRef Name="MstID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesMaster_SalesDetails">
+    <End Type="Self.SalesMaster" Multiplicity="0..1" Role="SalesMaster">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Self.SalesDetails" Multiplicity="*" Role="SalesDetails" />
+    <ReferentialConstraint>
+      <Principal Role="SalesMaster">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SalesDetails">
+        <PropertyRef Name="MstID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stocks_ItemInfo">
+    <End Type="Self.ItemInfo" Multiplicity="1" Role="ItemInfo" />
+    <End Type="Self.Stocks" Multiplicity="*" Role="Stocks" />
+    <ReferentialConstraint>
+      <Principal Role="ItemInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Stocks">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubCategory_Category">
+    <End Type="Self.Category" Multiplicity="0..1" Role="Category" />
+    <End Type="Self.SubCategory" Multiplicity="*" Role="SubCategory" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SubCategory">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_UserGroup">
+    <End Type="Self.UserGroup" Multiplicity="0..1" Role="UserGroup" />
+    <End Type="Self.User" Multiplicity="*" Role="User" />
+    <ReferentialConstraint>
+      <Principal Role="UserGroup">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UTL_USERGroup_UTL_USERINFO">
+    <End Type="Self.UserGroup" Multiplicity="0..1" Role="UserGroup" />
+    <End Type="Self.UTL_USERINFO" Multiplicity="*" Role="UTL_USERINFO" />
+    <ReferentialConstraint>
+      <Principal Role="UserGroup">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UTL_USERINFO">
+        <PropertyRef Name="UserGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetItemPurchaseDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="itemPurchaseMstID" Type="smallint" Mode="In" />
+  </Function>
+  <Function Name="GetItemPurchaseDetails2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="itemPurchaseMstID" Type="smallint" Mode="In" />
+  </Function>
+  <Function Name="GetItemPurchaseMst" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pageSize" Type="smallint" Mode="In" />
+    <Parameter Name="PageNum" Type="smallint" Mode="In" />
+    <Parameter Name="searchBy" Type="varchar" Mode="In" />
+    <Parameter Name="keyword" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="GetOrderInfoForMoneyReceipt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InvoiceNo" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="Digital_AppModelStoreContainer">
+    <EntitySet Name="bank_branch" EntityType="Self.bank_branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bank_info" EntityType="Self.bank_info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CardName" EntityType="Self.CardName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CompanyInfo" EntityType="Self.CompanyInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="COUNTRY_INFO" EntityType="Self.COUNTRY_INFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Designation" EntityType="Self.Designation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DISTRICTINFO" EntityType="Self.DISTRICTINFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FarmerInfo" EntityType="Self.FarmerInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemInfo" EntityType="Self.ItemInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemPurchaseDtl" EntityType="Self.ItemPurchaseDtl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemPurchaseMst" EntityType="Self.ItemPurchaseMst" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDetail" EntityType="Self.OrderDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentMethod" EntityType="Self.PaymentMethod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductReceivedDtls" EntityType="Self.ProductReceivedDtls" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductReceivedMst" EntityType="Self.ProductReceivedMst" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PurchaseHistory" EntityType="Self.PurchaseHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalaryPaymentDtls" EntityType="Self.SalaryPaymentDtls" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalaryPaymentMst" EntityType="Self.SalaryPaymentMst" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalesDetails" EntityType="Self.SalesDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalesMaster" EntityType="Self.SalesMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stocks" EntityType="Self.Stocks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubCategory" EntityType="Self.SubCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupplierGroup" EntityType="Self.SupplierGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaxCategory" EntityType="Self.TaxCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="THANAINFO" EntityType="Self.THANAINFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UOM" EntityType="Self.UOM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserGroup" EntityType="Self.UserGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UTL_USERINFO" EntityType="Self.UTL_USERINFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DIVISION_CODE" EntityType="Self.DIVISION_CODE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DIVISION_CODE].[DIVISION_CODE] AS [DIVISION_CODE], 
+    [DIVISION_CODE].[DIVISION_NAME] AS [DIVISION_NAME]
+    FROM [dbo].[DIVISION_CODE] AS [DIVISION_CODE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UTL_MODULES" EntityType="Self.UTL_MODULES" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UTL_MODULES].[MOD_ID] AS [MOD_ID], 
+    [UTL_MODULES].[DESCRIPTION] AS [DESCRIPTION], 
+    [UTL_MODULES].[MOD_NAME] AS [MOD_NAME]
+    FROM [dbo].[UTL_MODULES] AS [UTL_MODULES]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UTL_USERGRANT" EntityType="Self.UTL_USERGRANT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UTL_USERGRANT].[USER_NAME] AS [USER_NAME], 
+    [UTL_USERGRANT].[USER_GRP] AS [USER_GRP], 
+    [UTL_USERGRANT].[MOD_ID] AS [MOD_ID], 
+    [UTL_USERGRANT].[ALLOW_ADD] AS [ALLOW_ADD], 
+    [UTL_USERGRANT].[ALLOW_EDIT] AS [ALLOW_EDIT], 
+    [UTL_USERGRANT].[ALLOW_VIEW] AS [ALLOW_VIEW], 
+    [UTL_USERGRANT].[ALLOW_DELETE] AS [ALLOW_DELETE], 
+    [UTL_USERGRANT].[ALLOW_PRINT] AS [ALLOW_PRINT], 
+    [UTL_USERGRANT].[ALLOW_AUTHO] AS [ALLOW_AUTHO], 
+    [UTL_USERGRANT].[DISPFLAG] AS [DISPFLAG]
+    FROM [dbo].[UTL_USERGRANT] AS [UTL_USERGRANT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CustomerInformation" EntityType="Self.CustomerInformation" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CustomerInformation].[ID] AS [ID], 
+    [CustomerInformation].[Code] AS [Code], 
+    [CustomerInformation].[ContactTitle] AS [ContactTitle], 
+    [CustomerInformation].[ContactPerson] AS [ContactPerson], 
+    [CustomerInformation].[FullName] AS [FullName], 
+    [CustomerInformation].[ContactName] AS [ContactName], 
+    [CustomerInformation].[Email] AS [Email], 
+    [CustomerInformation].[Mobile] AS [Mobile], 
+    [CustomerInformation].[Phone] AS [Phone], 
+    [CustomerInformation].[Fax] AS [Fax], 
+    [CustomerInformation].[Address1] AS [Address1], 
+    [CustomerInformation].[Address2] AS [Address2], 
+    [CustomerInformation].[City] AS [City], 
+    [CustomerInformation].[State] AS [State], 
+    [CustomerInformation].[PostalCode] AS [PostalCode], 
+    [CustomerInformation].[Country] AS [Country], 
+    [CustomerInformation].[Active] AS [Active], 
+    [CustomerInformation].[CreatedBy] AS [CreatedBy], 
+    [CustomerInformation].[CreatedDate] AS [CreatedDate], 
+    [CustomerInformation].[ModifiedBy] AS [ModifiedBy], 
+    [CustomerInformation].[ModifiedDate] AS [ModifiedDate], 
+    [CustomerInformation].[ServerID] AS [ServerID], 
+    [CustomerInformation].[DateOfBirth] AS [DateOfBirth], 
+    [CustomerInformation].[Maragedate] AS [Maragedate]
+    FROM [dbo].[CustomerInformation] AS [CustomerInformation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ItemWithUOM" EntityType="Self.ItemWithUOM" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ItemWithUOM].[ID] AS [ID], 
+    [ItemWithUOM].[Code] AS [Code], 
+    [ItemWithUOM].[Name] AS [Name], 
+    [ItemWithUOM].[BranchName] AS [BranchName], 
+    [ItemWithUOM].[UOMID] AS [UOMID], 
+    [ItemWithUOM].[UOMName] AS [UOMName], 
+    [ItemWithUOM].[DiscountAmount] AS [DiscountAmount], 
+    [ItemWithUOM].[Discount] AS [Discount], 
+    [ItemWithUOM].[UnitsInStock] AS [UnitsInStock], 
+    [ItemWithUOM].[Category] AS [Category], 
+    [ItemWithUOM].[SubCategory] AS [SubCategory], 
+    [ItemWithUOM].[StyleNo] AS [StyleNo], 
+    [ItemWithUOM].[Design] AS [Design], 
+    [ItemWithUOM].[CostPrice] AS [CostPrice], 
+    [ItemWithUOM].[SalePrice] AS [SalePrice], 
+    [ItemWithUOM].[ItemCode] AS [ItemCode]
+    FROM [dbo].[ItemWithUOM] AS [ItemWithUOM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="OrderInfoForMoneyReceipt" EntityType="Self.OrderInfoForMoneyReceipt" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [OrderInfoForMoneyReceipt].[OrderDetailID] AS [OrderDetailID], 
+    [OrderInfoForMoneyReceipt].[OrderID] AS [OrderID], 
+    [OrderInfoForMoneyReceipt].[InvoiceNo] AS [InvoiceNo], 
+    [OrderInfoForMoneyReceipt].[OrderDate] AS [OrderDate], 
+    [OrderInfoForMoneyReceipt].[SubTotal] AS [SubTotal], 
+    [OrderInfoForMoneyReceipt].[TaxAmount] AS [TaxAmount], 
+    [OrderInfoForMoneyReceipt].[Design] AS [Design], 
+    [OrderInfoForMoneyReceipt].[Session] AS [Session], 
+    [OrderInfoForMoneyReceipt].[FabricPattan] AS [FabricPattan], 
+    [OrderInfoForMoneyReceipt].[DiscountAmount] AS [DiscountAmount], 
+    [OrderInfoForMoneyReceipt].[GrandTotal] AS [GrandTotal], 
+    [OrderInfoForMoneyReceipt].[TaxCategoryID] AS [TaxCategoryID], 
+    [OrderInfoForMoneyReceipt].[vatRate] AS [vatRate], 
+    [OrderInfoForMoneyReceipt].[CashReceived] AS [CashReceived], 
+    [OrderInfoForMoneyReceipt].[CashRefund] AS [CashRefund], 
+    [OrderInfoForMoneyReceipt].[ItemCode] AS [ItemCode], 
+    [OrderInfoForMoneyReceipt].[ItemName] AS [ItemName], 
+    [OrderInfoForMoneyReceipt].[ItemSize] AS [ItemSize], 
+    [OrderInfoForMoneyReceipt].[M_Code] AS [M_Code], 
+    [OrderInfoForMoneyReceipt].[UOMName] AS [UOMName], 
+    [OrderInfoForMoneyReceipt].[UnitPrice] AS [UnitPrice], 
+    [OrderInfoForMoneyReceipt].[TaxRate] AS [TaxRate], 
+    [OrderInfoForMoneyReceipt].[ChangeQty] AS [ChangeQty], 
+    [OrderInfoForMoneyReceipt].[ReturnQuantity] AS [ReturnQuantity], 
+    [OrderInfoForMoneyReceipt].[ItemDiscountAmount] AS [ItemDiscountAmount], 
+    [OrderInfoForMoneyReceipt].[SalePrice] AS [SalePrice], 
+    [OrderInfoForMoneyReceipt].[Quantity] AS [Quantity], 
+    [OrderInfoForMoneyReceipt].[TotalPrice] AS [TotalPrice], 
+    [OrderInfoForMoneyReceipt].[ContactName] AS [ContactName], 
+    [OrderInfoForMoneyReceipt].[UserName] AS [UserName], 
+    [OrderInfoForMoneyReceipt].[ServiceBy] AS [ServiceBy], 
+    [OrderInfoForMoneyReceipt].[FullName] AS [FullName], 
+    [OrderInfoForMoneyReceipt].[PaymentMode] AS [PaymentMode], 
+    [OrderInfoForMoneyReceipt].[Type] AS [Type], 
+    [OrderInfoForMoneyReceipt].[ItemType] AS [ItemType], 
+    [OrderInfoForMoneyReceipt].[Category] AS [Category], 
+    [OrderInfoForMoneyReceipt].[SubCategory] AS [SubCategory]
+    FROM [dbo].[OrderInfoForMoneyReceipt] AS [OrderInfoForMoneyReceipt]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_GetItemPurchaseDetails" EntityType="Self.View_GetItemPurchaseDetails" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_GetItemPurchaseDetails].[ID] AS [ID], 
+    [View_GetItemPurchaseDetails].[ItemID] AS [ItemID], 
+    [View_GetItemPurchaseDetails].[PO] AS [PO], 
+    [View_GetItemPurchaseDetails].[PODate] AS [PODate], 
+    [View_GetItemPurchaseDetails].[ChallanNo] AS [ChallanNo], 
+    [View_GetItemPurchaseDetails].[CreatedBy] AS [CreatedBy], 
+    [View_GetItemPurchaseDetails].[AggentName] AS [AggentName], 
+    [View_GetItemPurchaseDetails].[FarmerName] AS [FarmerName], 
+    [View_GetItemPurchaseDetails].[MobileNo] AS [MobileNo], 
+    [View_GetItemPurchaseDetails].[ItemCode] AS [ItemCode], 
+    [View_GetItemPurchaseDetails].[BatchNo] AS [BatchNo], 
+    [View_GetItemPurchaseDetails].[SalePrice] AS [SalePrice], 
+    [View_GetItemPurchaseDetails].[ExpireDate] AS [ExpireDate], 
+    [View_GetItemPurchaseDetails].[ItemName] AS [ItemName], 
+    [View_GetItemPurchaseDetails].[UnitPrice] AS [UnitPrice], 
+    [View_GetItemPurchaseDetails].[Quantity] AS [Quantity], 
+    [View_GetItemPurchaseDetails].[Total] AS [Total], 
+    [View_GetItemPurchaseDetails].[ItemPurchaseMstID] AS [ItemPurchaseMstID]
+    FROM [dbo].[View_GetItemPurchaseDetails] AS [View_GetItemPurchaseDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_GetItemPurchaseMst" EntityType="Self.View_GetItemPurchaseMst" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_GetItemPurchaseMst].[RowNum] AS [RowNum], 
+    [View_GetItemPurchaseMst].[CreatedBy] AS [CreatedBy], 
+    [View_GetItemPurchaseMst].[Keyword] AS [Keyword], 
+    [View_GetItemPurchaseMst].[TotalRows] AS [TotalRows], 
+    [View_GetItemPurchaseMst].[ID] AS [ID], 
+    [View_GetItemPurchaseMst].[GRN] AS [GRN], 
+    [View_GetItemPurchaseMst].[ReceivedDate] AS [ReceivedDate], 
+    [View_GetItemPurchaseMst].[PO] AS [PO], 
+    [View_GetItemPurchaseMst].[PODate] AS [PODate], 
+    [View_GetItemPurchaseMst].[ChallanNo] AS [ChallanNo], 
+    [View_GetItemPurchaseMst].[SupplierMobileNo] AS [SupplierMobileNo], 
+    [View_GetItemPurchaseMst].[ChallanDate] AS [ChallanDate], 
+    [View_GetItemPurchaseMst].[SupplierID] AS [SupplierID], 
+    [View_GetItemPurchaseMst].[Remarks] AS [Remarks], 
+    [View_GetItemPurchaseMst].[Total] AS [Total], 
+    [View_GetItemPurchaseMst].[Currency] AS [Currency], 
+    [View_GetItemPurchaseMst].[SupplierName] AS [SupplierName], 
+    [View_GetItemPurchaseMst].[discount] AS [discount], 
+    [View_GetItemPurchaseMst].[labure_charge] AS [labure_charge], 
+    [View_GetItemPurchaseMst].[carriage_charge] AS [carriage_charge]
+    FROM [dbo].[View_GetItemPurchaseMst] AS [View_GetItemPurchaseMst]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_ItemPurchaseHistoryorStatus" EntityType="Self.View_ItemPurchaseHistoryorStatus" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_ItemPurchaseHistoryorStatus].[ID] AS [ID], 
+    [View_ItemPurchaseHistoryorStatus].[PoCode] AS [PoCode], 
+    [View_ItemPurchaseHistoryorStatus].[AddBy] AS [AddBy], 
+    [View_ItemPurchaseHistoryorStatus].[PODate] AS [PODate], 
+    [View_ItemPurchaseHistoryorStatus].[ChallanNo] AS [ChallanNo], 
+    [View_ItemPurchaseHistoryorStatus].[FarmerName] AS [FarmerName], 
+    [View_ItemPurchaseHistoryorStatus].[StatusType] AS [StatusType], 
+    [View_ItemPurchaseHistoryorStatus].[FarmerMobile] AS [FarmerMobile], 
+    [View_ItemPurchaseHistoryorStatus].[Total] AS [Total], 
+    [View_ItemPurchaseHistoryorStatus].[ItemQuantity] AS [ItemQuantity], 
+    [View_ItemPurchaseHistoryorStatus].[Satt] AS [Satt]
+    FROM [dbo].[View_ItemPurchaseHistoryorStatus] AS [View_ItemPurchaseHistoryorStatus]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_ItemStatusDetails" EntityType="Self.View_ItemStatusDetails" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_ItemStatusDetails].[ID] AS [ID], 
+    [View_ItemStatusDetails].[PoCode] AS [PoCode], 
+    [View_ItemStatusDetails].[ItemName] AS [ItemName], 
+    [View_ItemStatusDetails].[authoreBy] AS [authoreBy], 
+    [View_ItemStatusDetails].[Code] AS [Code], 
+    [View_ItemStatusDetails].[Total] AS [Total], 
+    [View_ItemStatusDetails].[PurchasePrice] AS [PurchasePrice], 
+    [View_ItemStatusDetails].[Quantity] AS [Quantity], 
+    [View_ItemStatusDetails].[PODate] AS [PODate], 
+    [View_ItemStatusDetails].[ChallanNo] AS [ChallanNo], 
+    [View_ItemStatusDetails].[FarmerName] AS [FarmerName], 
+    [View_ItemStatusDetails].[StatusType] AS [StatusType], 
+    [View_ItemStatusDetails].[FarmerMobile] AS [FarmerMobile], 
+    [View_ItemStatusDetails].[ItemQuantity] AS [ItemQuantity], 
+    [View_ItemStatusDetails].[Satt] AS [Satt]
+    FROM [dbo].[View_ItemStatusDetails] AS [View_ItemStatusDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_ProductReceivedInformation" EntityType="Self.View_ProductReceivedInformation" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_ProductReceivedInformation].[ID] AS [ID], 
+    [View_ProductReceivedInformation].[PoCode] AS [PoCode], 
+    [View_ProductReceivedInformation].[PODate] AS [PODate], 
+    [View_ProductReceivedInformation].[ChallanNo] AS [ChallanNo], 
+    [View_ProductReceivedInformation].[FarmerName] AS [FarmerName], 
+    [View_ProductReceivedInformation].[Satatus] AS [Satatus], 
+    [View_ProductReceivedInformation].[SupplierMobileNo] AS [SupplierMobileNo], 
+    [View_ProductReceivedInformation].[Total] AS [Total], 
+    [View_ProductReceivedInformation].[ItemQuantity] AS [ItemQuantity], 
+    [View_ProductReceivedInformation].[Satt] AS [Satt], 
+    [View_ProductReceivedInformation].[PurchseID] AS [PurchseID]
+    FROM [dbo].[View_ProductReceivedInformation] AS [View_ProductReceivedInformation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_PurchaseInformation" EntityType="Self.View_PurchaseInformation" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_PurchaseInformation].[ID] AS [ID], 
+    [View_PurchaseInformation].[PoCode] AS [PoCode], 
+    [View_PurchaseInformation].[CreatedBy] AS [CreatedBy], 
+    [View_PurchaseInformation].[PODate] AS [PODate], 
+    [View_PurchaseInformation].[ChallanNo] AS [ChallanNo], 
+    [View_PurchaseInformation].[FarmerName] AS [FarmerName], 
+    [View_PurchaseInformation].[Satatus] AS [Satatus], 
+    [View_PurchaseInformation].[SupplierMobileNo] AS [SupplierMobileNo], 
+    [View_PurchaseInformation].[Total] AS [Total], 
+    [View_PurchaseInformation].[ItemQuantity] AS [ItemQuantity], 
+    [View_PurchaseInformation].[Satt] AS [Satt]
+    FROM [dbo].[View_PurchaseInformation] AS [View_PurchaseInformation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_ReceivedDetails" EntityType="Self.View_ReceivedDetails" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_ReceivedDetails].[ID] AS [ID], 
+    [View_ReceivedDetails].[ProductID] AS [ProductID], 
+    [View_ReceivedDetails].[ItemCode] AS [ItemCode], 
+    [View_ReceivedDetails].[ExpireDate] AS [ExpireDate], 
+    [View_ReceivedDetails].[ItemName] AS [ItemName], 
+    [View_ReceivedDetails].[UnitPrice] AS [UnitPrice], 
+    [View_ReceivedDetails].[SalePrice] AS [SalePrice], 
+    [View_ReceivedDetails].[Quantity] AS [Quantity], 
+    [View_ReceivedDetails].[Total] AS [Total], 
+    [View_ReceivedDetails].[MstID] AS [MstID]
+    FROM [dbo].[View_ReceivedDetails] AS [View_ReceivedDetails]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_FarmerInfo_COUNTRY_INFO" Association="Self.FK_FarmerInfo_COUNTRY_INFO">
+      <End EntitySet="COUNTRY_INFO" Role="COUNTRY_INFO" />
+      <End EntitySet="FarmerInfo" Role="FarmerInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FarmerInfo_DISTRICTINFO" Association="Self.FK_FarmerInfo_DISTRICTINFO">
+      <End EntitySet="DISTRICTINFO" Role="DISTRICTINFO" />
+      <End EntitySet="FarmerInfo" Role="FarmerInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FarmerInfo_THANAINFO" Association="Self.FK_FarmerInfo_THANAINFO">
+      <End EntitySet="THANAINFO" Role="THANAINFO" />
+      <End EntitySet="FarmerInfo" Role="FarmerInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemInfo_Category" Association="Self.FK_ItemInfo_Category">
+      <End EntitySet="Category" Role="Category" />
+      <End EntitySet="ItemInfo" Role="ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemInfo_Department" Association="Self.FK_ItemInfo_Department">
+      <End EntitySet="Department" Role="Department" />
+      <End EntitySet="ItemInfo" Role="ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemInfo_SubCategory" Association="Self.FK_ItemInfo_SubCategory">
+      <End EntitySet="SubCategory" Role="SubCategory" />
+      <End EntitySet="ItemInfo" Role="ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemInfo_UOM" Association="Self.FK_ItemInfo_UOM">
+      <End EntitySet="UOM" Role="UOM" />
+      <End EntitySet="ItemInfo" Role="ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemPurchaseDtl_ItemPurchaseMst" Association="Self.FK_ItemPurchaseDtl_ItemPurchaseMst">
+      <End EntitySet="ItemPurchaseMst" Role="ItemPurchaseMst" />
+      <End EntitySet="ItemPurchaseDtl" Role="ItemPurchaseDtl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemPurchaseMst_Farmer" Association="Self.FK_ItemPurchaseMst_Farmer">
+      <End EntitySet="FarmerInfo" Role="FarmerInfo" />
+      <End EntitySet="ItemPurchaseMst" Role="ItemPurchaseMst" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_Order" Association="Self.FK_OrderDetail_Order">
+      <End EntitySet="Order" Role="Order" />
+      <End EntitySet="OrderDetail" Role="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_Stocks" Association="Self.FK_OrderDetail_Stocks">
+      <End EntitySet="Stocks" Role="Stocks" />
+      <End EntitySet="OrderDetail" Role="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductReceivedDtls_ProductReceivedMst" Association="Self.FK_ProductReceivedDtls_ProductReceivedMst">
+      <End EntitySet="ProductReceivedMst" Role="ProductReceivedMst" />
+      <End EntitySet="ProductReceivedDtls" Role="ProductReceivedDtls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalaryPaymentDtls_SalaryPaymentMst" Association="Self.FK_SalaryPaymentDtls_SalaryPaymentMst">
+      <End EntitySet="SalaryPaymentMst" Role="SalaryPaymentMst" />
+      <End EntitySet="SalaryPaymentDtls" Role="SalaryPaymentDtls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesMaster_SalesDetails" Association="Self.FK_SalesMaster_SalesDetails">
+      <End EntitySet="SalesMaster" Role="SalesMaster" />
+      <End EntitySet="SalesDetails" Role="SalesDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stocks_ItemInfo" Association="Self.FK_Stocks_ItemInfo">
+      <End EntitySet="ItemInfo" Role="ItemInfo" />
+      <End EntitySet="Stocks" Role="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubCategory_Category" Association="Self.FK_SubCategory_Category">
+      <End EntitySet="Category" Role="Category" />
+      <End EntitySet="SubCategory" Role="SubCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_UserGroup" Association="Self.FK_User_UserGroup">
+      <End EntitySet="UserGroup" Role="UserGroup" />
+      <End EntitySet="User" Role="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UTL_USERGroup_UTL_USERINFO" Association="Self.FK_UTL_USERGroup_UTL_USERINFO">
+      <End EntitySet="UserGroup" Role="UserGroup" />
+      <End EntitySet="UTL_USERINFO" Role="UTL_USERINFO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

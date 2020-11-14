@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fa96f3f9f13b46e99febbee5ab8f4d3c" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="Digital_AppModel.bank_branch" PointX="16.75" PointY="13.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.bank_info" PointX="8.75" PointY="22.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.CardName" PointX="22.75" PointY="10.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.Category" PointX="0.75" PointY="2.5" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.CompanyInfo" PointX="22.75" PointY="13.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.COUNTRY_INFO" PointX="9.75" PointY="12.5" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.Customer" PointX="22.75" PointY="19.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.Department" PointX="3" PointY="6.875" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.Designation" PointX="10.75" PointY="23.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.DISTRICTINFO" PointX="9.75" PointY="9.875" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.Employee" PointX="24.75" PointY="0.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.FarmerInfo" PointX="12" PointY="8.125" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.ItemInfo" PointX="5.25" PointY="1.125" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.ItemPurchaseDtl" PointX="16.5" PointY="9" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.ItemPurchaseMst" PointX="14.25" PointY="8.125" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.Order" PointX="7.5" PointY="12.875" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.OrderDetail" PointX="9.75" PointY="1.25" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.PaymentMethod" PointX="24.75" PointY="6.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.ProductReceivedDtl" PointX="14" PointY="1.375" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.ProductReceivedMst" PointX="11.75" PointY="1.125" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.PurchaseHistory" PointX="18.75" PointY="5.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.SalaryPaymentDtl" PointX="19" PointY="1" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.SalaryPaymentMst" PointX="16.75" PointY="1.25" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.SalesDetail" PointX="3" PointY="16.625" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.SalesMaster" PointX="0.75" PointY="16.125" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.Stock" PointX="7.5" PointY="1.625" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.SubCategory" PointX="3" PointY="2.375" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.Supplier" PointX="18.75" PointY="11.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.TaxCategory" PointX="5.75" PointY="7.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.THANAINFO" PointX="9.75" PointY="15.125" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.UOM" PointX="3" PointY="11.625" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.User" PointX="14" PointY="21.625" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.UserGroup" PointX="11.75" PointY="19.875" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.UTL_USERINFO" PointX="14" PointY="15.375" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.DIVISION_CODE" PointX="18.75" PointY="18.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.UTL_MODULES" PointX="20.75" PointY="5.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.UTL_USERGRANT" PointX="20.75" PointY="8.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.CustomerInformation" PointX="20.75" PointY="12.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.OrderInfoForMoneyReceipt" PointX="20.75" PointY="19.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.View_GetItemPurchaseDetails" PointX="16.75" PointY="21.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.View_GetItemPurchaseMst" PointX="22.75" PointY="0.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.View_ItemPurchaseHistoryorStatus" PointX="0.75" PointY="22.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.View_ItemStatusDetails" PointX="2.75" PointY="22.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.View_ProductReceivedInformation" PointX="4.75" PointY="22.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.View_PurchaseInformation" PointX="6.75" PointY="22.75" Width="1.5" />
+        <EntityTypeShape EntityType="Digital_AppModel.View_ReceivedDetails" PointX="22.75" PointY="6.75" Width="1.5" />
+        <AssociationConnector Association="Digital_AppModel.FK_ItemInfo_Category" />
+        <AssociationConnector Association="Digital_AppModel.FK_SubCategory_Category" />
+        <AssociationConnector Association="Digital_AppModel.FK_FarmerInfo_COUNTRY_INFO" />
+        <AssociationConnector Association="Digital_AppModel.FK_ItemInfo_Department" />
+        <AssociationConnector Association="Digital_AppModel.FK_FarmerInfo_DISTRICTINFO" />
+        <AssociationConnector Association="Digital_AppModel.FK_FarmerInfo_THANAINFO" />
+        <AssociationConnector Association="Digital_AppModel.FK_ItemPurchaseMst_Farmer" />
+        <AssociationConnector Association="Digital_AppModel.FK_ItemInfo_SubCategory" />
+        <AssociationConnector Association="Digital_AppModel.FK_ItemInfo_UOM" />
+        <AssociationConnector Association="Digital_AppModel.FK_Stocks_ItemInfo" />
+        <AssociationConnector Association="Digital_AppModel.FK_ItemPurchaseDtl_ItemPurchaseMst" />
+        <AssociationConnector Association="Digital_AppModel.FK_OrderDetail_Order" />
+        <AssociationConnector Association="Digital_AppModel.FK_OrderDetail_Stocks" />
+        <AssociationConnector Association="Digital_AppModel.FK_ProductReceivedDtls_ProductReceivedMst" />
+        <AssociationConnector Association="Digital_AppModel.FK_SalaryPaymentDtls_SalaryPaymentMst" />
+        <AssociationConnector Association="Digital_AppModel.FK_SalesMaster_SalesDetails" />
+        <AssociationConnector Association="Digital_AppModel.FK_User_UserGroup" />
+        <AssociationConnector Association="Digital_AppModel.FK_UTL_USERGroup_UTL_USERINFO" />
+        <EntityTypeShape EntityType="Digital_AppModel.ItemWithUOM" PointX="25.375" PointY="10.75" Width="1.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
